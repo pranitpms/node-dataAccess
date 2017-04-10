@@ -1,0 +1,28 @@
+{
+  "name": "node-data-access",
+  "version": "1.0.0",
+  "description": "data accesss layer for Mongo DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranitpms/node-dataAccess.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "DataAccess",
+    "NodeJS",
+    "MEAN"
+  ],
+  "author": "Pranit Bardapurkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranitpms/node-dataAccess/issues"
+  },
+  "homepage": "https://github.com/pranitpms/node-dataAccess#readme",
+  "dependencies": {
+    "q": "^1.5.0"
+  }
+}
