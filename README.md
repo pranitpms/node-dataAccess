@@ -124,6 +124,13 @@ refer : https://docs.mongodb.com/manual/reference/operator/query/text/
 	
 refer : https://docs.mongodb.com/manual/reference/operator/query/text/
 
+> GetNextId() -  Get Incremented value for primary key column
+
+ - Method Name : GetNextId
+ - parameters  :
+	 - modelObj:  **(object)** mongoose schema model object.
+	 - field: **(string)** primary key column name.
+	
 ## Author
 
 * **Pranit Bardapurkar** 
