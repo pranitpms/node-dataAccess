@@ -18,14 +18,125 @@ to install package on local run the Below command
   npm install node-mongoose-data-access 
 ```
 
-### Methods
-   
-## Authors
+## Methods
+
+> Fetch()
+
+ - Method Name :  Fetch
+ - Parameters      :
+	 -  modelObj   :  <object> mongoose schema model object.
+	 -  condition    : <object> mongoose db condition (JSON)
+	 - fields           : <string> DB fields for reference.
+	 - options       : <object> DB query options (sort,oder etc.)
+ refere :  http://mongoosejs.com/docs/api.html#model_Model.find
+
+
+> FetchByUId()
+
+ - Method Name : FetchByUId
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - id                : <string> mongoDB collection unique id (_id).
+
+
+> FetchById()
+
+ - Method Name : FetchById
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - id                : <string> value of the DB field.
+	 - keyName    : <string> DB field name.
+
+
+> FetchAllById()
+
+ - Method Name : FetchAllById
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - id                : <string> value of the DB field.
+	 - keyName    : <string> DB field name.
+
+
+> FetchAll()
+
+ - Method Name : FetchAll
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+
+refer : http://mongoosejs.com/docs/api.html#model_Model.find
+
+
+> GetCount()
+
+ - Method Name : GetCount
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - condition    : <object> mongoose db condition (JSON)
+
+refere : http://mongoosejs.com/docs/api.html#model_Model.count
+
+
+>Delete()
+
+ - Method Name : Delete
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - id                : <string> value of the DB field.
+	 - options       : <object> DB query options.
+
+refer : http://mongoosejs.com/docs/api.html#model_Model.findByIdAndRemove
+
+
+> Save()
+
+ - Method Name : Save
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+
+
+> InsertMany()
+
+ - Method Name : InsertMany
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - jArray         :  <Array>  array of collection data.
+
+refere  : http://mongoosejs.com/docs/api.html#model_Model.insertMany
+
+
+> Update()
+
+ - Method Name : FetchAllById
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - id                : <string> value of the DB field.
+	 - update        : <string> update field with value (JSON)
+	 -  options     : <object> DB query options.
+
+refere : http://mongoosejs.com/docs/api.html#model_Model.findByIdAndUpdate
+
+
+> Search() - search by keyword
+
+ - Method Name : Search
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - text             : <string> search string.
+	 -  options     : <object> DB query options.(limit,skip etc.)
+
+refere : https://docs.mongodb.com/manual/reference/operator/query/text/
+
+
+> SearchCount() -  keyword serach count
+
+ - Method Name : SearchCount
+ - parameters     :
+	 - modelObj   :  <object> mongoose schema model object.
+	 - text             : <string> search string.
+	
+refere : https://docs.mongodb.com/manual/reference/operator/query/text/
+
+
+## Author
 
 * **Pranit Bardapurkar** 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
