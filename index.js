@@ -4,6 +4,7 @@ var DATADELETE = require('./data-access/delete');
 var DATAINSERT = require('./data-access/insert');
 var DATAUPDATE = require('./data-access/update');
 var TEXTSEARCH = require('./data-access/textSearch');
+var TBLKEYGENS  = require('./data-access/tableKyeGenerator');
 
 exports = {
     Delete        : DATADELETE.DeleteModel,
@@ -17,5 +18,6 @@ exports = {
 	InsertMany    : DATAINSERT.InsertMany,
     Search        : DATAINSERT.Search,
 	SearchCount   : DATAINSERT.SearchCount,
-    Update        : TEXTSEARCH.Update
+    Update        : TEXTSEARCH.Update,
+	GetNextId     : TBLKEYGENS.GetNextId
 };
