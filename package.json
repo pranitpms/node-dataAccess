@@ -1,6 +1,6 @@
 {
   "name": "node-mongoose-data-access",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "data accesss layer for Mongo DB using mongoose model",
   "main": "index.js",
   "scripts": {
